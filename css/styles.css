@@ -512,8 +512,10 @@ textarea{
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background: #2E2F42;
-        padding-left: 68px;
+        padding-left: 5px;
+        color: #8E8F99;
 }
+
 .form_label_footer{
         font-family: 'Roboto';
         font-style: normal;
@@ -726,7 +728,9 @@ textarea{
 
         transition: var(--anim-fast);
 }
-.modal-cross:active{
+.modal-cross:active,
+.modal-cross:focus,
+.modal-cross:hover{
         fill: #FFFFFF;
         background: #404BBF;
 }
@@ -778,13 +782,13 @@ textarea{
 }
 .form_icon{
         position: absolute;
-        bottom: 10px;
-        left: 10px;
-        width: 18px;
-        height: 24px;
+        bottom: 14px;
+        left: 19px;
+        width: 15px;
+        height: 15px;
         fill: #2E2F42;
         left: 16px;
-
+        background-size: contain;
         transition: var(--anim-fast);
 }
 .form_input:focus +.form_icon{
@@ -873,6 +877,10 @@ textarea{
         border-radius: 4px;
         margin-top: 24px;
         margin-bottom: 24px;
+}
+
+.button_modal:hover{
+        background-color: #404BBF;
 }
 .form_link{
         color: #4D5AE5;
